@@ -10,7 +10,6 @@
       font-size: 30px;
       width: 100%;
       height: 70px;
-      padding: 10px;
       box-sizing: border-box;
     }
 
@@ -66,10 +65,16 @@
         const screenLeft = application.screens.find(s => s.id === screenLeftId)      
         const elementLeft = this.shadowRoot.querySelector('.left')        
         elementLeft.innerHTML = screenLeft.htmlContent
-        
+
+        const stylesLeft = zySdk.services.factory.toString(screenLeft.styles.filter(s => s.id === 'background-color'))
+        elementLeft.style = stylesLeft
+
         const screenRight = application.screens.find(s => s.id === screenRightId)      
         const elementRight = this.shadowRoot.querySelector('.right')        
         elementRight.innerHTML = screenRight.htmlContent
+
+        const stylesRight = zySdk.services.factory.toString(screenRight.styles.filter(s => s.id === 'background-color'))
+        elementRight.style = stylesRight
         
       })
     }
