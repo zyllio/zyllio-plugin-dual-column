@@ -1,0 +1,7 @@
+{
+  "name": "Dual columns Plugin",
+  "description": "A component that displays 2 screens in 1 screen side by side",
+  "company": "Zyllio team",
+  "icon": "https://studio.zyllio.com/assets/icon.png",
+  "version": "2.0.0"
+}

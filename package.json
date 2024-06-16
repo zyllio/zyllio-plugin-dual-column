@@ -1,0 +1,19 @@
+{
+  "name": "zyllio-plugin-dual-column",
+  "version": "1.0.0",
+  "description": "A component that displays 2 screens in 1 screen",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server --port=3000 --cors"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@zyllio/zy-cli": "latest",
+    "@zyllio/zy-sdk": "latest"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
